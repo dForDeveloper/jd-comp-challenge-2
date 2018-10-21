@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  color: #7E8A9E;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  display: grid;
+  grid-template: "sidebar header"
+                 "sidebar main";
+}
+
+.sidebar {
+  display: grid;
+  grid-template-rows: 200px 1fr 1fr 50%;
+  grid-area: sidebar;
+  /*padding: 20px;*/
+}
+
+.sidebar article {
+  padding: 20px;
+  border-top: 2px solid #313949;
+}
+
+.sidebar,
+.sidebar h5,
+.sidebar li {
+  background-color: #374050;
+  color: #A2ABBD;
+  font-weight: 700;
+  list-style: none;
+}
+
+.sidebar h6 {
+  color: #67748B;
+}
+
+.sidebar ul {
+  line-height: 2rem;
+}
+
+.sidebar input[type="checkbox"] {
+  background-color: yellow;
+}
+
+header {
+  display: grid;
+  grid-area: header;
+  grid-template-rows: 50px 1fr 50px;
+  height: 200px;
+}
+
+header .search {
+  border-bottom: 1px solid #E4E6E9
+}
+
+header .summary {
+  margin: 30px;
+}
+
+header .summary h3 {
+  color: #4E515D;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+header .tabs {
+  margin-left: 30px;
+}
+
+header .tabs h5 {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+main {
+  background-color: #EDF2F6;
+  border-top: 1px solid #D9DFE4;
+  display: grid;
+  grid-area: main;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  grid-template: "chart chart"
+                 "table aside";
+  grid-template-columns: 2fr 1fr;
+  padding: 30px;
+}
+
+main .chart {
+  border-bottom: 3px solid #D3DAE1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 2fr;
+  grid-area: chart;
+  height: 300px;
+}
+
+main .chart span {
+  color: #5B6677;
+  display: block;
+  font-size: 3rem;
+}
+
+main .chart .bar-graph {
+  display: inline-block;
+  height: 200px;
+}
+
+main table {
+  background-color: #FFFFFF;
+  border-collapse: collapse;
+  grid-area: table;
+}
+
+main table thead {
+  background-color: #717E93;
+}
+
+main table thead button {
+  background-color: #7E8BA4;
+  color: #FFFFFF;
+}
+
+main table th {
+  color: #FFFFFF;
+  padding: 20px;
+  text-align: left;
+}
+
+main table tr td:nth-child(1) {
+  font-weight: 700;
+}
+
+main table td {
+  padding: 20px;
+  border-top: 1px solid #EFF2F5;
+  border-bottom: 1px solid #EFF2F5;
+}
+
+main table tr .salary {
+  color: #5B6677;
+  font-weight: 700;
+}
+
+main aside {
+  grid-area: aside;
+}
+
+
+
+
+
