@@ -4,45 +4,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Lato:400,700">
     <title>Static Comp 2</title>
   </head>
   <body>
-    <aside>
-      <img src="#" alt="Newton Barley profile pic">
-      <h5>Newton Barley</h5>
-      <h6>Main</h6>
-      <ul>
-        <li>HOME</li>
-        <li>JOBS</li>
-        <li>RESUMES</li>
-        <li>TASKS</li>
-        <li>CALENDAR</li>
-      </ul>
-      <h6>Admin</h6>
-      <ul>
-        <li>USERS</li>
-        <li>LOCATIONS</li>
-        <li>WORKFLOWS</li>
-        <li>JOB BOARDS</li>
-        <li>SOCIAL</li>
-      </ul>
-      <h6>Categories</h6>
-      <ul>
-        <li><input type="checkbox">Administration</li>
-        <li><input type="checkbox">Design</li>
-        <li><input type="checkbox">Executive</li>
-        <li><input type="checkbox">Human Resources</li>
-      </ul>
-    </aside>
+    <nav class="sidebar">
+      <article>
+        <img src="#" alt="Newton Barley profile pic">
+        <h5>Newton Barley</h5>
+      </article>
+      <article>
+        <h6>Main</h6>
+        <ul>
+          <li>HOME</li>
+          <li>JOBS</li>
+          <li>RESUMES</li>
+          <li>TASKS</li>
+          <li>CALENDAR</li>
+        </ul>
+      </article>
+      <article>
+        <h6>Admin</h6>
+        <ul>
+          <li>USERS</li>
+          <li>LOCATIONS</li>
+          <li>WORKFLOWS</li>
+          <li>JOB BOARDS</li>
+          <li>SOCIAL</li>
+        </ul>
+      </article>
+      <article>
+        <h6>Categories</h6>
+        <ul>
+          <li><input type="checkbox">Administration</li>
+          <li><input type="checkbox">Design</li>
+          <li><input type="checkbox">Executive</li>
+          <li><input type="checkbox">Human Resources</li>
+        </ul>
+      </article>
+    </nav>
     <header>
-      <button>hamburger</button>
-      <input type="text" name="" placeholder="Search for a job, task or resume">
-      <button>add user</button>
-      <button>calendar</button>
-      <button>grid</button>
-    </header>
-    <main>
-      <section>
+      <section class="search">
+        <button>hamburger</button>
+        <input type="text" name="" placeholder="Search for a job, task or resume">
+        <button>add user</button>
+        <button>calendar</button>
+        <button>grid</button>
+      </section>
+      <section class="summary">
         <h3>Customer Service Representative</h3>
         San Francisco, CA - <a href="#">Preview this post</a>
         <button>OPEN</button>
@@ -50,7 +60,7 @@
         <button>edit</button>
         <button>delete</button>
       </section>
-      <section>
+      <section class="tabs">
         <h5>SUMMARY</h5>
         <h5>APPLICANTS</h5>
         <h5>JOB BOARD</h5>
@@ -59,59 +69,59 @@
         <h5>BROADCAST</h5>
         <h5>NOTIFICATIONS</h5>
       </section>
-      <section>
-        3,154 APPLICANTS
-        1,546 INTERVIEWS
-        912 FORWARDS
+    </header>
+    <main>
+      <section class="chart">
+        <div><span>3,154</span>APPLICANTS</div>
+        <div><span>1,546</span>INTERVIEWS</div>
+        <div><span>912</span>FORWARDS</div>
+        <img src="images/bar-graph.png" alt="bar graph" class="bar-graph">
         <button>TOTALS - Out of 5,231 views</button>
-        <img src="#" alt="bar graph">
         <button>APPLICANTS/DAY</button>
       </section>
-      <section>
-        <table>
-          <thead>
-            <tr>
-              <th>JOB DESCRIPTION</th>
-              <th><button>EDIT</button></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>POSITION TITLE</td>
-              <td>Customer Service Representative</td>
-            </tr>
-            <tr>
-              <td>LOCATION</td>
-              <td>San Francisco, CA</td>
-            </tr>
-            <tr>
-              <td>EMPLOYMENT TYPE</td>
-              <td>Full-time</td>
-            </tr>
-            <tr>
-              <td>EXPERIENCE</td>
-              <td>Mid-level</td>
-            </tr>
-            <tr>
-              <td>STATUS</td>
-              <td>Open</td>
-            </tr>
-            <tr>
-              <td>DESCRIPTION</td>
-              <td>The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle; helping the bidness reduce customer service wait times whil doing a backhand spring and eating a ham sandwich.</td>
-            </tr>
-            <tr>
-              <td>HIRING LEAD</td>
-              <td><img src="#" alt="small head picture">Tom Tizzy</td>
-            </tr>
-            <tr>
-              <td>APPROVED</td>
-              <td>SALARY $58,000</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <section>
+      <table>
+        <thead>
+          <tr>
+            <th>JOB DESCRIPTION</th>
+            <th><button>EDIT</button></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>POSITION TITLE</td>
+            <td>Customer Service Representative</td>
+          </tr>
+          <tr>
+            <td>LOCATION</td>
+            <td>San Francisco, CA</td>
+          </tr>
+          <tr>
+            <td>EMPLOYMENT TYPE</td>
+            <td>Full-time</td>
+          </tr>
+          <tr>
+            <td>EXPERIENCE</td>
+            <td>Mid-level</td>
+          </tr>
+          <tr>
+            <td>STATUS</td>
+            <td>Open</td>
+          </tr>
+          <tr>
+            <td>DESCRIPTION</td>
+            <td>The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle; helping the bidness reduce customer service wait times whil doing a backhand spring and eating a ham sandwich.</td>
+          </tr>
+          <tr>
+            <td>HIRING LEAD</td>
+            <td><img src="#" alt="small head picture">Tom Tizzy</td>
+          </tr>
+          <tr>
+            <td>APPROVED SALARY</td>
+            <td class="salary">$58,000</td>
+          </tr>
+        </tbody>
+      </table>
+      <aside class="grey-bg-section">
         <article>
           <a href="#">
             <img src="#" alt="Post to facebook">
@@ -140,7 +150,7 @@
           <p>You can automatically upload multiple resumes to this job by email the address below.</p>
           <input type="text" placeholder="tomtizzy@gmail.com">
         </article>
-      </section>
+      </aside>
     </main>
   </body>
 </html>
