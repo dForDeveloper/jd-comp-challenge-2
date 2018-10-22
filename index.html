@@ -4,96 +4,203 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet"
+     href="https://fonts.googleapis.com/css?family=Lato:400,700">
+    <link rel="stylesheet"
+     href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+     integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+     crossorigin="anonymous">
     <title>Static Comp 2</title>
   </head>
   <body>
-    <aside>
-      <img src="#" alt="Newton Barley profile pic">
-      Newton Barley
-      Main
-      HOME
-      JOBS
-      RESUMES
-      TASKS
-      CALENDAR
-      Admin
-      USERS
-      LOCATIONS
-      WORKFLOWS
-      JOB BOARDS
-      SOCIAL
-      Categories
-      Administration
-      Design
-      Executive
-      Human Resources
-    </aside>
+    <nav class="sidebar">
+      <article class="profile-section">
+        <img src="images/bow-tie-man.png" alt="Newton Barley profile pic"
+         class="profile-pic">
+        <h5>Newton Barley</h5>
+      </article>
+      <article>
+        <h6>Main</h6>
+        <ul>
+          <li><i class="fas fa-home"></i>HOME</li>
+          <li><i class="fas fa-briefcase"></i>JOBS</li>
+          <li><i class="fas fa-file-alt"></i>RESUMES</li>
+          <li><i class="fas fa-clipboard-list"></i>TASKS</li>
+          <li><i class="fas fa-calendar-alt"></i>CALENDAR</li>
+        </ul>
+      </article>
+      <article>
+        <h6>Admin</h6>
+        <ul>
+          <li><i class="fas fa-user-friends"></i>USERS</li>
+          <li><i class="fas fa-map-marker-alt"></i>LOCATIONS</li>
+          <li><i class="fas fa-network-wired"></i>WORKFLOWS</li>
+          <li><i class="fas fa-copy"></i>JOB BOARDS</li>
+          <li><i class="fas fa-vector-square"></i>SOCIAL</li>
+        </ul>
+      </article>
+      <article>
+        <h6>Categories</h6>
+        <ul>
+          <li><input type="checkbox">Administration</li>
+          <li><input type="checkbox">Design</li>
+          <li><input type="checkbox">Executive</li>
+          <li><input type="checkbox">Human Resources</li>
+        </ul>
+      </article>
+    </nav>
     <header>
-      <button></button>
-      <input type="text" name="" placeholder="Search for a job, task or resume">
-      <button></button>
-      <button></button>
-      <button></button>
+      <section class="search">
+        <button><i class="fas fa-bars"></i></button>
+        <input type="text" placeholder="Search for a job, task or resume">
+        <button><i class="fas fa-user-plus"></i></button>
+        <button><i class="fas fa-calendar-alt"></i></button>
+        <button><i class="fas fa-th"></i></button>
+      </section>
+      <section class="summary">
+        <div>
+          <h3>Customer Service Representative</h3>
+          <i class="fas fa-map-marker-alt"></i>San Francisco, CA - 
+          <a href="#">Preview this post</a>
+        </div>
+        <div class="four-buttons">
+          <button class="long-button">
+            <i class="fas fa-circle"></i>OPEN
+          </button>
+          <button class="circle-button">
+            <i class="fas fa-bookmark"></i>
+          </button>
+          <button class="circle-button">
+            <i class="fas fa-pencil-alt"></i>
+          </button>
+          <button class="circle-button">
+            <i class="fas fa-trash-alt"></i>
+          </button>
+        </div>
+      </section>
+      <section class="tabs">
+        <h5>SUMMARY</h5>
+        <h5>APPLICANTS</h5>
+        <h5>JOB BOARD</h5>
+        <h5>INTERVIEWS</h5>
+        <h5>ACTIVITY</h5>
+        <h5>BROADCAST</h5>
+        <h5>NOTIFICATIONS</h5>
+      </section>
     </header>
     <main>
-      <section>
-        Customer Service Representative
-        San Francisco, CA - <a href="#">Preview this post</a>
-        <button>OPEN</button>
-        <button></button>
-        <button></button>
-        <button></button>
+      <section class="chart">
+        <div class="circle-graph circle-1">
+          <span>3,154</span>APPLICANTS
+        </div>
+        <div class="circle-graph circle-2">
+          <span>1,546</span>INTERVIEWS
+        </div>
+        <div class="circle-graph circle-3">
+          <span>912</span>FORWARDS
+        </div>
+        <img src="images/bar-graph.png" alt="bar graph" class="bar-graph">
+        <button class="totals-button">TOTALS - Out of 5,231 views</button>
+        <button class="applicants-button">APPLICANTS/DAY</button>
       </section>
-      <section>
-        SUMMARY
-        APPLICANTS
-        JOB BOARD
-        INTERVIEWS
-        ACTIVITY
-        BROADCAST
-        NOTIFICATIONS
-      </section>
-      <section>
-        3,154 APPLICANTS
-        1,546 INTERVIEWS
-        912 FORWARDS
-        <button>TOTALS - Out of 5,231 views</button>
-        <img src="#" alt="bar graph">
-        <button>APLLICANTS/DAY</button>
-      </section>
-      <section>
-        JOB DESCRIPTION <button>EDIT</button>
-        POSITION TITLE Customer Service Representative
-        LOCATION San Francisco, CA
-        EMPLOYMENT TYPE Full-time
-        EXPERIENCE Mid-level
-        STATUS Open
-        DESCRIPTION The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle; helping the bidness reduce customer service wait times whil doing a backhand spring and eating a ham sandwich.
-        HIRING LEAD <img src="#" alt="small head picture">
-        APPROVED SALARY $58,000
-      </section>
-      <section>
-        <a href="#">
-          <img src="#" alt="Post to facebook">
-        </a>
-        <a href="#">
-          <img src="#" alt="Tweet this Job">
-        </a>
-        <a href="#">
-          <img src="#" alt="Post to LinkedIn">
-        </a>
-        Link to this Job
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quae, exercitationem aut architecto. Illum?
-        <input type="text" placeholder="http://loremipsum.dol/sit-amet">
-        <button>Copy</button>
-        Use the Button Widget
-        This widget embeds the buttons for sharing the job for submitting a resume on your website.
-        <input type="text" placeholder=`<script type="text/javascript">`>
-        <button>Copy</button>
-        Upload Resumes by Email
-        You can automatically upload multiple resumes to this job by email the address below.
-        <input type="text" placeholder="tomtizzy@gmail.com">
-      </section>
+      <table>
+        <thead>
+          <tr>
+            <th>JOB DESCRIPTION</th>
+            <th><button><i class="fas fa-pencil-alt"></i>EDIT</button></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>POSITION TITLE</td>
+            <td>Customer Service Representative</td>
+          </tr>
+          <tr>
+            <td>LOCATION</td>
+            <td>San Francisco, CA</td>
+          </tr>
+          <tr>
+            <td>EMPLOYMENT TYPE</td>
+            <td>Full-time</td>
+          </tr>
+          <tr>
+            <td>EXPERIENCE</td>
+            <td>Mid-level</td>
+          </tr>
+          <tr>
+            <td>STATUS</td>
+            <td>Open</td>
+          </tr>
+          <tr>
+            <td>DESCRIPTION</td>
+            <td>
+              The Customer Service Representative is responsible for
+               interacting with and providing quality assistance to all radical
+               customers, responsible for keeping up-to-date on the various
+               product shizzle; helping the bidness reduce customer service wait
+               times while doing a backhand spring and eating a ham sandwich.
+            </td>
+          </tr>
+          <tr>
+            <td>HIRING LEAD</td>
+            <td class="thumbnail-cell">
+              <img src="images/bald-man.png" alt="Tom Tizzy"
+              class="profile-pic thumbnail">
+              Tom Tizzy
+            </td>
+          </tr>
+          <tr>
+            <td>APPROVED SALARY</td>
+            <td class="salary">$58,000</td>
+          </tr>
+        </tbody>
+      </table>
+      <aside class="grey-bg-section">
+        <article class="soc-med-buttons">
+          <button class="facebook">
+            <img src="images/facebook.svg" alt="Post to Facebook">
+            Post to Facebook
+          </button>
+          <button class="twitter">
+            <img src="images/twitter.svg" alt="Tweet this Job">
+            Tweet this Job
+          </button>
+          <button class="linkedin">
+            <img src="images/linkedin.svg" alt="Post to LinkedIn">
+            Post to LinkedIn
+          </button>
+        </article>
+        <article>
+          <h4><i class="fas fa-globe-americas"></i>Link to this Job</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipis
+             cing elit. Integer mollis neque eget vestibpend.
+          </p>
+          <div class="input-with-btn">
+            <input type="text" placeholder="http://loremipsum.dol/sit amet...">
+            <button class="copy-button">Copy</button>
+          </div>
+        </article>
+        <article>
+          <h4><i class="fas fa-table"></i>Use the Button Widget</h4>
+          <p>
+            This widget embeds the buttons for sharing the
+             job for submitting a resume on your website.
+          </p>
+          <div class="input-with-btn">
+            <input type="text" placeholder='<script type="text/javascript" s...'>
+            <button class="copy-button">Copy</button>
+          </div>
+        </article>
+        <article>
+          <h4><i class="fas fa-paper-plane"></i>Upload Resumes by Email</h4>
+          <p>
+            You can automatically upload multiple resumes
+             to this job by email the address below.
+          </p>
+          <input type="text" placeholder="tomtizzy@gmail.com" class="input-email">
+        </article>
+      </aside>
     </main>
   </body>
 </html>
