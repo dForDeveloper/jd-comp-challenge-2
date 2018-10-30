@@ -5,11 +5,11 @@
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet"
-     href="https://fonts.googleapis.com/css?family=Lato:400,700">
-    <link rel="stylesheet"
      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
      crossorigin="anonymous">
+     <link rel="stylesheet"
+     href="https://fonts.googleapis.com/css?family=Lato:400,700">
     <title>Static Comp 2</title>
   </head>
   <body>
@@ -17,7 +17,7 @@
       <article class="profile-section">
         <img src="images/bow-tie-man.png" alt="Newton Barley profile pic"
          class="profile-pic">
-        <h5>Newton Barley</h5>
+        <h5>Newton Barley<i class="fas fa-angle-down"></i></h5>
       </article>
       <article>
         <h6>Main</h6>
@@ -42,20 +42,21 @@
       <article>
         <h6>Categories</h6>
         <ul>
-          <li><input type="checkbox">Administration</li>
-          <li><input type="checkbox">Design</li>
-          <li><input type="checkbox">Executive</li>
-          <li><input type="checkbox">Human Resources</li>
+          <li><i class="fas fa-square yellow-box"></i>Administration</li>
+          <li><i class="fas fa-square blue-box"></i>Design</li>
+          <li><i class="fas fa-square red-box"></i>Executive</li>
+          <li><i class="fas fa-square green-box"></i>Human Resources</li>
         </ul>
       </article>
     </nav>
     <header>
       <section class="search">
-        <button><i class="fas fa-bars"></i></button>
-        <input type="text" placeholder="Search for a job, task or resume">
+        <button><i class="fas fa-caret-left"></i><i class="fas fa-bars"></i></button>
+        <input class="search-bar" type="text" placeholder="&#xf002Search for a job, task or resume">
         <button><i class="fas fa-user-plus"></i></button>
         <button><i class="fas fa-calendar-alt"></i></button>
         <button><i class="fas fa-th"></i></button>
+        <div class="empty"></div>
       </section>
       <section class="summary">
         <div>
@@ -90,19 +91,44 @@
     </header>
     <main>
       <section class="chart">
+        <article class="circle-section">
         <div class="circle-graph circle-1">
-          <span>3,154</span>APPLICANTS
+          <div class="circle-text">
+            <p><span>3,154</span>APPLICANTS</p>
+          </div>
+          <svg class="circle-svg" height="175" width="175">
+            <circle class="circle circle-bg" cx="87.5" cy="87.5" r="75" />
+            <circle class="circle circle-graph-1" cx="87.5" cy="87.5" r="75" />
+          </svg>
         </div>
         <div class="circle-graph circle-2">
-          <span>1,546</span>INTERVIEWS
+          <div class="circle-text">
+            <p><span>1,546</span>INTERVIEWS</p>
+          </div>
+          <svg class="circle-svg" height="175" width="175">
+            <circle class="circle circle-bg" cx="87.5" cy="87.5" r="75" />
+            <circle class="circle circle-graph-2" cx="87.5" cy="87.5" r="75" />
+          </svg>
         </div>
         <div class="circle-graph circle-3">
-          <span>912</span>FORWARDS
+          <div class="circle-text">
+            <p><span>912</span>FORWARDS</p>
+          </div>
+          <svg class="circle-svg" height="175" width="175">
+            <circle class="circle circle-bg" cx="87.5" cy="87.5" r="75" />
+            <circle class="circle circle-graph-3" cx="87.5" cy="87.5" r="75" />
+          </svg>
         </div>
+        </article>
         <img src="images/bar-graph.png" alt="bar graph" class="bar-graph">
         <button class="totals-button">TOTALS - Out of 5,231 views</button>
         <button class="applicants-button">APPLICANTS/DAY</button>
       </section>
+      <div class="hr">
+        <span class="gray-hr"></span>
+        <i class="fas fa-angle-up"></i>
+        <span class="gray-hr"></span>
+      </div>
       <table>
         <thead>
           <tr>
