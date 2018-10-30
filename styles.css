@@ -26,7 +26,7 @@ body{
 
 .sidebar article {
   border-top: 3px solid #313949;
-  padding: 20px;
+  padding: 20px 0 20px;
 }
 
 .sidebar .profile-section {
@@ -63,10 +63,15 @@ body{
 
 .sidebar h6 {
   color: #67748B;
+  padding: 0 20px;
 }
 
 .sidebar ul {
   line-height: 3rem;
+}
+
+.sidebar .sidebar-ul li:hover {
+  background-color: #313949;
 }
 
 .sidebar li {
@@ -75,6 +80,7 @@ body{
   grid-gap: 10px;
   grid-template-columns: 15px 1fr;
   justify-items: left;
+  padding: 0 20px;
 }
 
 .sidebar li .fas {
@@ -155,7 +161,12 @@ header .search input::placeholder {
 }
 
 header .search button:hover,
-header .search button:hover .fas {
+header .search button:hover .fas,
+header .summary button:hover,
+header .summary button:hover .not-circle,
+main .chart button:hover,
+main .hr button:hover,
+main .hr button:hover .fas {
   background-color: #48A3F3;
   color: #FFFFFF;
 }
@@ -230,7 +241,7 @@ header .tabs h5 {
   margin-right: 30px;
 }
 
-header .tabs h5:nth-child(1) {
+header .tabs h5:hover {
   border-bottom: 3px solid #48A3F3;
   color: #4E515D;
 }
@@ -326,7 +337,6 @@ main .chart span {
 
 main .chart .bar-graph {
   display: inline-block;
-  /*height: 200px;*/
   width: 420px;
 }
 
@@ -354,18 +364,13 @@ main .hr .gray-hr {
   margin-bottom: 60px;
 }
 
-main .hr .fas {
+main .hr button {
   background-color: #FFFFFF;
   border: 2px solid #D3DAE1;
   border-radius: 50%;
-  color: #9CA3AE;
-  display: inline-block;
-  font-size: 1.2rem;
   height: 35px;
   justify-self: center;
   margin-bottom: 60px;
-  padding-top: 7px;
-  text-align: center;
   width: 35px;
 }
 
@@ -529,6 +534,7 @@ main aside .input-email {
   border-radius: 3px;
 }
 
+/*MEDIA QUERIES*/
 @media screen and (max-width: 1200px) {
   main .chart {
     grid-template:
